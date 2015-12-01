@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue">#03A9F4</color>
+    <color name="court_blue">#81D4FA</color>
+    <color name="green">#4CAF50</color>
+    <color name="court_green">#9CCC65</color>
+    <color name="ball_yellow">#FFF176</color>
+    <color name="white">#FFFFFF</color>
+    <color name="dark_green">#2E7D32</color>
+    <color name="light_green">#DCEDC8</color>
+    <color name="black">#000000</color>
+
+</resources>

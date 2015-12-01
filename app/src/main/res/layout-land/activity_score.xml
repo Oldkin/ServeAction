@@ -1,0 +1,268 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context=".ScoreActivity"
+                >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/number_sets">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/number_of_sets"
+            style="@style/text"
+            />
+
+        <TextView
+            android:id="@+id/set_number_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textStyle="bold"
+            android:text=" 5"
+            style="@style/text"
+            />
+
+    </LinearLayout>
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_below="@id/number_sets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2,3,4,5,6"
+        android:id="@+id/table">
+
+        <TableRow>
+
+            <ImageView
+                android:padding="4dp"
+                android:id="@+id/serve_player_one"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/tennis_ball"
+                android:visibility="visible"
+                />
+
+            <Spinner
+                android:id="@+id/player_one_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                style="@style/text"
+                />
+
+            <TextView
+                android:id="@+id/player_one_set1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:padding="4dp"
+                style="@style/text"
+                />
+
+            <TextView
+                android:id="@+id/player_one_set2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                style="@style/text"
+                android:padding="4dp"
+                />
+
+            <TextView
+                android:id="@+id/player_one_set3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                style="@style/text"
+                android:padding="4dp"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/player_one_set4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                style="@style/text"
+                android:padding="4dp"
+                />
+
+            <TextView
+                android:id="@+id/player_one_set5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                style="@style/text"
+                android:padding="4dp"
+                />
+
+            <TextView
+                android:id="@+id/player_one_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                style="@style/text"
+                android:padding="4dp"
+                />
+
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:padding="4dp"
+                android:id="@+id/serve_player_two"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/tennis_ball"
+                android:visibility="invisible"
+                />
+
+            <Spinner
+                android:id="@+id/player_two_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                style="@style/text"
+                />
+
+            <TextView
+                android:textColorHighlight="@color/ball_yellow"
+                android:id="@+id/player_two_set1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                style="@style/text"
+                android:padding="4dp"
+                />
+
+            <TextView
+                android:id="@+id/player_two_set2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                style="@style/text"
+                android:padding="4dp"
+                />
+
+            <TextView
+                android:id="@+id/player_two_set3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                style="@style/text"
+                android:padding="4dp"
+                />
+
+            <TextView
+                android:id="@+id/player_two_set4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                style="@style/text"
+                android:padding="4dp"
+                />
+
+            <TextView
+                android:id="@+id/player_two_set5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                style="@style/text"
+                android:padding="4dp"/>
+
+            <TextView
+                android:id="@+id/player_two_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                style="@style/text"
+                android:padding="4dp"
+                />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttons"
+        >
+
+        <ImageView
+            android:id="@+id/player_one_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/anne_seng_397_wtn"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:id="@+id/player_two_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/anne_seng_397_wtn"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="4dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/player_one_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/player_name_one"
+            android:layout_weight="1"
+            android:layout_marginRight="2dp"
+            style="@style/Buttons"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reset"
+            android:text="Reset"
+            style="@style/Buttons"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/player_two_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:text="@string/player_name_two"
+            android:layout_weight="1"
+            style="@style/Buttons"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/created"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/created_by"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        style="@style/text"
+        />
+
+</RelativeLayout>

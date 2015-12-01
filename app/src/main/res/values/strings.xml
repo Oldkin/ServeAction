@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Serve Action</string>
+    <string name="created_by">Created by Akash Surti</string>
+    <string name="number_of_sets">Number of Sets: </string>
+
+    <string name="player_name_one">Player One</string>
+    <string name="player_name_two">Player Two</string>
+
+    <string name="deuce_toast">Deuce!</string>
+    <string name="tiebreak_toast">Tie-break!</string>
+    <string name="game_over">The match is over.</string>
+
+    <string-array name="player_names_array">
+        <item>A. Seng</item>
+        <item>A. Bridgett</item>
+        <item>G. Ferro</item>
+        <item>G. Benton</item>
+        <item>J. Elkerton</item>
+        <item>J. Thome</item>
+        <item>S. Molly</item>
+        <item>S. Robertson</item>
+    </string-array>
+
+    <string name="action_settings">Settings</string>
+</resources>
